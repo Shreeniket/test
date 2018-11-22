@@ -1,6 +1,61 @@
-<html>
-<title>JJJ</title>
-<body>
-<p>Hello World</p>
-</body>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Color Changing Color</title>
+    <style media="screen">
+      body{
+        text-align: center;
+      }
+      h1{
+        font-family: monospace;
+        font-size: 30px;
+        color: white;
+      }
+      header{
+        background-color: #000000;
+      }
+      .circle{
+        border-radius: 50%;
+        background-color: red;
+        border: 5px solid black;
+        height: 150px;
+        width: 150px;
+        margin-left: 250px;
+        animation: rotate 2s infinite;
+      }
+      .innercirc{
+        border-radius: 50%;
+        border: 10px dotted orange;
+        height: 100px;
+        width: 100px;
+        margin: 12px;
+      }
+      @keyframes rotate {
+        0%{
+          transform: rotate(0deg);
+          /*background-color: red;*/
+        }
+        50%{
+          transform: rotate(90deg);
+          /*background-color: yellow;*/
+        }
+        100%{
+          transform: rotate(90deg);
+          /*background-color: green;*/
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 align = "center">Circle</h1>
+    </header>
+      <div class = "circle">
+        <div class="innercirc">
+        </div>
+      </div>
+<script type='text/javascript' id='susi-bot-script' data-userid='e72d66092031e922f5ed8e7d9f012573' data-group='Lifestyle' data-language='en' data-skill='Test' src='https://skills.susi.ai/susi-chatbot.js'></script>
+  </body>
 </html>
